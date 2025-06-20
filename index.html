@@ -1,37 +1,293 @@
----
-layout: default
-title: Home
----
+<!-- Test locally: bundle exec jekyll serve -->
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<!doctype html>
+<html lang="en-us">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1QPLQGQSQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    {{ post.content }}
+  gtag('config', 'G-W1QPLQGQSQ');
+</script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="author" content="Laura Dodds">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <title>
+    
+      Laura Dodds
+    
+  </title>
+
+  <link rel="stylesheet" href="css/poole.css">
+  <link rel="stylesheet" href="css/syntax.css">
+  <link rel="stylesheet" href="css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <link rel="apple-touch-icon-precomposed" href="http://localhost:4000/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="images/laura_headshot.jpg">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://localhost:4000/atom.xml">
+</head>
+
+  <body class="theme-base-08">
+
+    <div class="sidebar">
+  <div class="container" >
+    <div class="sidebar-about">
+      <a href="images/laura_headshot.jpg"><img style="width:85%;max-width:100%;display:block;margin-left:auto;margin-right:auto" alt="profile photo" src="images/laura_headshot.jpg" class="hoverZoomLink"></a>
+      <h1>
+        <a href="" style="text-align: center">
+          Laura Dodds
+        </a>
+      </h1>
+      <p class="lead"></p>
+    </div>
+    <div>
+      <a href="mailto:ldodds@mit.edu">Email</a> 
+      &nbsp/&nbsp
+      <!-- <a href="data/cv.pdf">CV</a> &nbsp/&nbsp -->
+      <a href="https://www.linkedin.com/in/laura-dodds-871b4116a/">Linkedin</a> 
+      &nbsp/&nbsp
+      <!-- <br> -->
+      <a href="https://scholar.google.com/citations?user=KIgj3WQAAAAJ&hl=en&oi=ao">Scholar</a>
+      <p></p>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="#about">About Me</a>
+      <a class="sidebar-nav-item" href="#research">Publications</a>
+      <a class="sidebar-nav-item" href="#invited">Talks</a>
+      <a class="sidebar-nav-item" href="#service">Service</a>
+
+    </nav>
+
+<!--    <p class="sidebar-sticky">&copy; 2021. All rights reserved.</p>-->
   </div>
-  {% endfor %}
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+
+    <div class="content container">
+      <div class="page">
+  <h1 id="about">About Me</h1>
+        <p>
+        I am a fourth year PhD student at MIT, advised by Prof. Fadel Adib. 
+        </p>
+
+        <p>
+          In my work, I explore how wireless signals can be used to sense and percieve the physical world in novel ways. Specifically, my current work focuses on building advanced non-line-of-sight perception using millimeter-wave (mmWave) signals, with applications spanning robotics, augmented reality, shipping and logistics, and smart homes. My work has been recognized with the Amazon Robotics Thriving Stars Fellowship, MIT Jacobs Presidential Fellowship, Best Masters of Engineering Thesis Award at MIT, and IEEE RFID Best Paper award. 
+        </p>
+
+    <p>
+      I have also had the pleasure of working with Prof. Haitham Al Hassenieh as a visiting PhD student in 2023. Before starting my PhD, I recieved my Bachelors in Electrical Engineering and Computer Science from MIT in 2021. 
+    </p>
+
+   
+<h1 id="research">Publications</h1>
+<p><em>* indicates equal contribution</em></p>        
+
+<table id="publications-table"><tbody>
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/mmNorm-gif.gif" alt="3d-recon" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="LINK" >
+            <papertitle>Non-Line-of-Sight 3D Object Reconstruction via mmWave Surface Normal Estimation</papertitle>
+          </a>
+          <br>
+          <strong>Laura Dodds</strong>, Tara Boroushaki, Kaichen Zhou, Fadel Adib
+          <br>
+          <em>ACM Conference on Mobile Systems, Applications, and Services (MobiSys)</em>, June 2025. 
+          <br>
+          <!-- <a href="LINK" class="button-link">Paper</a> -->
+        </td>
+      </tr>
+
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/mifly-pic.jpg" alt="mmWave-drone" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/mifly.pdf">
+            <papertitle>6D Self-Localization of Drones using a Single Millimeter-Wave Backscatter Anchor</papertitle>
+          </a>
+          <br>
+          Maisy Lam*, <strong>Laura Dodds*</strong>, Aline Eid, Jimmy Hester, Fadel Adib
+          <br>
+          <em>IEEE International Conference on Computer Communications (InfoCom)</em>, May 2025. 
+          <br>
+          <a href="papers/mifly.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+
+            <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/rflect.gif" alt="RFlect" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/rflect.pdf">
+            <papertitle>Around the Corner mmWave Imaging in Practical Environments</papertitle>
+          </a>
+          <br>
+          <strong>Laura Dodds</strong>, Hailan Shanbhag, Junfeng (Jayden) Guan, and Haitham Al Hassanieh
+          <br>
+          <em>ACM Conference on Mobile Computing and Networking (MobiCom)</em>, Oct. 2024. 
+          <br>
+          <a href="papers/rflect.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/RF-Boost.png" alt="RF-Boost" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/rfboost.pdf">
+            <papertitle>Software-Controlled Polarization for Longer-Range RFID Reading and Localization</papertitle>
+          </a>
+          <br>
+          <strong>Laura Dodds</strong>, Nazish Naeem, Aline Eid, Fadel Adib
+          <br>
+          <em>IEEE International Conference on RFID</em>, June 2023.  <strong style="color:#4B5ABE;">Best Paper Finalist </strong>
+          <br>
+          <a href="papers/rfboost.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>      
+      
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/AR-synergies.png" alt="RF-AR" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/rfar.pdf">
+            <papertitle>Exploiting Synergies between Augmented Reality and RFIDs for Item Localization and Retrieval</papertitle>
+          </a>
+          <br>
+          Tara Boroushaki, Maisy Lam, Weitung Chen, <strong>Laura Dodds</strong>, Aline Eid, Fadel Adib
+          <br>
+          <em>IEEE International Conference on RFID</em>, June 2023. <strong style="color:#4B5ABE;">Best Paper </strong>
+          <br>
+          <a href="papers/rfar.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/Fusebot_journal.jpg" alt="FuseBot-Journal" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/FuseBot_Journal.pdf">
+            <papertitle>FuseBot: Mechanical Search of Rigid and Deformable Objects via Multi-Modal Perception</papertitle>
+          </a>
+          <br>
+          Tara Boroushaki, <strong>Laura Dodds</strong>, Nazish Naeem, Fadel Adib
+          <br>
+          <em>RSS'22 Special Issue in Autonomous Robots - Invited Paper</em> 
+          <br>
+          <a href="papers/FuseBot_Journal.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/POLAR-pic.jpg" alt="POLAR" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/polar.pdf">
+            <papertitle>A Handheld Fine-Grained RFID Localization System with Complex-Controlled Polarization</papertitle>
+          </a>
+          <br>
+          <strong>Laura Dodds</strong>, Isaac Perper, Aline Eid, Fadel Adib
+          <br>
+          <em>ACM Conference on Mobile Computing And Networking (MobiCom)</em>, Oct. 2023. 
+          <br>
+          <a href="papers/polar.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/XAR.JPG" alt="X-AR" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/X_AR.pdf">
+            <papertitle>Augmenting Augmented Reality with Non-Line-of-Sight Perception</papertitle>
+          </a>
+          <br>
+          Tara Boroushaki, Maisy Lam, <strong>Laura Dodds</strong>, Aline Eid, Fadel Adib
+          <br>
+          <em>Networked Systems Design and Implementation (NSDI)</em>, June 2022. 
+          <br>
+          <a href="papers/X_AR.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="paper_icon" >
+          <div>
+          <img src="images/FuseBot.png" alt="FuseBot" width="190"  >
+          </div>
+        </td>
+        <td class="paper_content" width="75%" valign="middle">
+          <a href="papers/FuseBot.pdf">
+            <papertitle>FuseBot: RF-Visual Mechanical Search</papertitle>
+          </a>
+          <br>
+          Tara Boroushaki, <strong>Laura Dodds</strong>, Nazish Naeem, Fadel Adib
+          <br>
+          <em>Robotics: Science and Systems (RSS)</em>, June 2022. 
+          <br>
+          <a href="papers/FuseBot.pdf" class="button-link">Paper</a>
+        </td>
+      </tr>
+        </tbody></table>
+
+<h1 id="invited">Talks</h1>
+          <ul>
+                <!-- <li> <strong><a href="https://efficient-genai.github.io">Efficient Text-to-Image and Text-to-3D modeling Tutorial</a>, ECCV 2024. </strong> <em> Evaluating Text-to-Image Models.</em></li> <a href="https://ssundaram21.github.io/data/ImageEvaluationMethods.pdf">[Slides]</a> -->
+                <li> <span style="color:#d63e76">Non-Line-of-Sight 3D Object Reconstruction via mmWave Surface Normal Estimation</span>, Mobisys 2025.    </li> <!-- <a href="data/COMING_SOON.pdf" class="button-link">Slides</a> -->
+                <li> <a href="data/RFlect_Slides.pptx">Around the Corner mmWave Imaging in Practical Environments</a>, Mobicom 2024.    </li> <a href="data/RFlect_Slides.pptx" class="button-link">Slides</a>
+                <li> <span style="color:#d63e76">New Ways for Sensing the Physical World</span>, Co-Presented with Sayeed Saad Afzal, MIT Media Lab Member Event 2024.    </li> 
+                <li> <span style="color:#d63e76">X-AR: Augmented Reality with X-Ray Vision</span>, Co-Presented with Maisy Lam, Presentation & Live Demo, RFID Journal Live 2024.    </li> 
+                <li> <a href="data/POLAR_Presentation_final.pptx">Fine-Grained RFID Localization with a Handheld Device</a>, Mobicom 2023.    </li> <a href="data/POLAR_Presentation_final.pptx" class="button-link">Slides</a>
+                <li> <a href="data/RF-Boost_Presentation.pptx">Software-Controlled Polarization for Longer Range RFID Reading and Localization</a>, IEEE RFID 2023.    </li> <a href="data/RF-Boost_Presentation.pptx" class="button-link">Slides</a>
+                
+          </ul>
+
+        
+<h1 id="service">Service</h1>
+        <ul>
+          <li> <strong>Reviewer: </strong>ICCV, TMC, TNET, IEEE Network Magazine, JSAC, JRFID</a></li>
+          </ul>
+
+    </div>
+
+  </body>
+</html>
